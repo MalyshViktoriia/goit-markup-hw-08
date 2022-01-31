@@ -1,0 +1,27 @@
+.partners {
+  --card-set-item: 6;
+}
+
+.partners__link {
+  color: var(--icons-color);
+  display: flex;
+  width: 100%;
+  height: 92px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icons-color);
+  transition: border-color var(--animation-time) var(--timing-function),
+    color var(--animation-time) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-colour);
+    color: var(--accent-color);
+  }
+}
+
+.partners__icon {
+  fill: currentColor;
+}

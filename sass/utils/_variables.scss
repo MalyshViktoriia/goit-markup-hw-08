@@ -1,0 +1,39 @@
+:root {
+  // COLORS
+  --primary-text-color: #212121;
+  --logo-color: #000000;
+  --background-color: #ffffff;
+  --background-color-secondary: #2f303a;
+  --accent-color: #2196f3;
+  --optional-text-color: #757575;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --buttons-bgc: #f5f4fa;
+  --background-color-hover: #188ce8;
+  --header-bordeer-color: #ececec;
+  --portfolio-border-color: #eeeeee;
+  --icons-color: #afb1b8;
+
+  // ANIMATIONS
+  --animation-time: 250ms;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  // FONTS
+  --primamy-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
+
+  // SHADOWS
+  --command-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  --btn-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --filter-list-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  --portfolio-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  // BORDER_RADIUS
+  border-radius: 4px;
+
+  // GRID
+  --card-set-gap: 30px;
+  --card-set-item: 3;
+}

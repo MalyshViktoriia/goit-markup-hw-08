@@ -1,6 +1,5 @@
 .command__title {
   margin-bottom: 10px;
-
   font-weight: 500;
   color: var(--primary-text-color);
 }
@@ -14,11 +13,24 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--background-color);
+
+  // margin-bottom: 30px;
 }
 
+// .command--last-person {
+//   margin-bottom: 0;
+// }
 .command {
   background-color: var(--buttons-bgc);
-  --card-set-item: 4;
+  @media screen and (max-width: 767px) {
+    --card-set-item: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --card-set-item: 2;
+  }
+  @media screen and (min-width: 1200px) {
+    --card-set-item: 4;
+  }
 }
 
 .command__paragraph,

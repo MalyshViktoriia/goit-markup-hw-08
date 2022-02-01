@@ -2,15 +2,25 @@
   padding: 40px;
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
+  }
 }
 
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(20 / 23);
+
   text-align: center;
   color: var(--primary-text-color);
   margin-bottom: 12px;
+
+  @media screen and (max-width: 1199px) {
+    line-height: calc(30 / 20);
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+  }
 }
 
 .form__field {
@@ -45,7 +55,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  min-width: 448px;
+
   margin: 0;
   padding: 0;
   padding-left: 42px;
@@ -55,6 +65,14 @@
   &:hover {
     border-color: var(--accent-color);
     outline: none;
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    min-width: 448px;
   }
 }
 
@@ -78,6 +96,7 @@
   height: 120px;
   resize: none;
   padding: 12px 16px;
+  letter-spacing: 0.01em;
   transition: border-color var(--animation-time) var(--timing-function);
 
   &:focus,
@@ -89,6 +108,14 @@
   &::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
+
+  @media screen and (max-width: 1199px) {
+    line-height: calc(16 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
 }
 
 .privat__policy {
@@ -97,6 +124,13 @@
   justify-content: center;
   margin-bottom: 30px;
   line-height: 1;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  @media screen and (min-width: 1200px) {
+    line-height: calc(24 / 14);
+  }
 }
 
 .policy {
@@ -115,7 +149,6 @@
 
 .check-box {
   display: inline-block;
-  margin-right: 10px;
   width: 16px;
   height: 15px;
   border: 2px solid var(--primary-text-color);
@@ -126,6 +159,13 @@
   .policy:hover + &,
   .policy:focus + & {
     border-color: var(--accent-color);
+  }
+
+  @media screen and (max-width: 1199px) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
   }
 }
 

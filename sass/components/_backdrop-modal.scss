@@ -22,8 +22,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  min-height: 581px;
   background-color: var(--background-color);
   box-shadow: var(--command-shadow);
   border-radius: 4px;
@@ -33,6 +31,9 @@
 
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.8);
+  }
+  @media screen and (max-width: 1199px) {
+    max-width: 450px;
   }
 }
 

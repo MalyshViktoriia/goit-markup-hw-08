@@ -1,4 +1,7 @@
 .card-set {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(var(--card-set-gap) * -1);

@@ -9,6 +9,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover, 1600px auto;
+
+  @media screen and (max-width: 767px) {
+    min-width: 480px;
+  }
 }
 
 .hero__title {

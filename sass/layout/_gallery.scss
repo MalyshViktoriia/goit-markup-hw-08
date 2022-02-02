@@ -1,9 +1,18 @@
 .portfolio__item {
   justify-content: center;
+  @media screen and (max-width: 767px) {
+    --card-set-item: 1;
+  }
+  @media screen and (min-width: 768px) {
+    --card-set-item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --card-set-item: 3;
+  }
 }
 
 .portfolio__link {
-  // display: block;
   transition: box-shadow var(--animation-time) var(--timing-function);
 
   &:focus,
@@ -29,6 +38,9 @@
   padding: 20px 24px;
 
   border: 1px solid var(--portfolio-border-color);
+  @media screen and (max-width: 767px) {
+    min-width: 450px;
+  }
 }
 
 .portfolio__text {

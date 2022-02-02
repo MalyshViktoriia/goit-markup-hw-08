@@ -86,8 +86,8 @@
   left: 11px;
   color: var(--primary-text-color);
 
-  .form-input:focus ~ &,
-  .form-input:hover ~ & {
+  .form__input:hover ~ &,
+  .form__input:focus ~ & {
     color: var(--accent-color);
   }
 }

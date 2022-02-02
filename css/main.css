@@ -833,7 +833,7 @@ img {
   color: var(--primary-text-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .site-nav__list {
     display: none;
   }
@@ -850,9 +850,21 @@ img {
   align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .contacts__list {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .tablet_contacts-item {
+    padding: 0;
   }
 }
 

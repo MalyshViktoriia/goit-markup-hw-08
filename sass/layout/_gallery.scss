@@ -5,8 +5,7 @@
   }
   @media screen and (min-width: 768px) {
     --card-set-item: 2;
-    flex-direction: column;
-    height: 100%;
+    display: flex;
   }
 
   @media screen and (min-width: 1200px) {
@@ -16,6 +15,10 @@
 
 .portfolio__link {
   transition: box-shadow var(--animation-time) var(--timing-function);
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   &:focus,
   &:hover,
@@ -38,11 +41,8 @@
 
 .portfolio-gallery__item {
   padding: 20px 24px;
-
   border: 1px solid var(--portfolio-border-color);
-  @media screen and (max-width: 767px) {
-    flex-grow: 1;
-  }
+  flex-grow: 1;
 }
 
 .portfolio__text {

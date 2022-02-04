@@ -8,14 +8,15 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0;
+  // opacity: 0;
 
-  &.is.open {
-    opacity: 1;
-  }
+  // &.is.open {
+  //   opacity: 1;
+  // }
 }
-.modal_mobile-button {
-  border: none;
+.modal__mobile-button {
+ margin-left: auto;
+
 }
 
 .menu-toggle {

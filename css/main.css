@@ -349,7 +349,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -862,12 +862,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .tablet_contacts-item {
-    padding: 0;
-  }
-}
-
 .site-nav__link {
   display: flex;
   align-items: center;
@@ -908,7 +902,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  max-width: 1600px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-background.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -917,7 +910,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero {
-    min-width: 480px;
+    min-width: 320px;
   }
 }
 
@@ -1171,6 +1164,12 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__cont-item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__cont-item:not(:last-child) {
     margin-right: 70px;
@@ -1216,8 +1215,14 @@ img {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .footer__input {
-  margin-right: 12px;
   min-width: 358px;
   height: 50px;
   background-color: transparent;
@@ -1244,6 +1249,12 @@ img {
 @media screen and (max-width: 767px) {
   .footer__input {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    margin-right: 12px;
   }
 }
 
@@ -1320,6 +1331,8 @@ img {
 @media screen and (min-width: 768px) {
   .portfolio__item {
     --card-set-item: 2;
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -1356,7 +1369,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .portfolio-gallery__item {
-    min-width: 450px;
+    flex-grow: 1;
   }
 }
 

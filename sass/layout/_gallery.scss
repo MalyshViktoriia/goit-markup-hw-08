@@ -5,6 +5,8 @@
   }
   @media screen and (min-width: 768px) {
     --card-set-item: 2;
+    flex-direction: column;
+    height: 100%;
   }
 
   @media screen and (min-width: 1200px) {
@@ -39,7 +41,7 @@
 
   border: 1px solid var(--portfolio-border-color);
   @media screen and (max-width: 767px) {
-    min-width: 450px;
+    flex-grow: 1;
   }
 }
 

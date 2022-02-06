@@ -167,20 +167,33 @@
                 <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="list card-set"> 
                     <li class="our-work__item card-set__item">
-                            <img src="./img/work1.jpg" alt="Пишем код" width="370" height="294">
+                    <picture>
+                        <source srcset="./img/work1.jpg 1x, 
+                        ./img/work1-2x.jpg 2x" 
+                        media="(min-width: 1200px)">
+                        <img src="./img/work1.jpg" alt="Десктопные приложения" width="370" height="294">
+                    </picture>
                             <div class="thumb">
                                 <p class="thumb__text">Десктопные приложения</p>
                             </div>
 
                     </li>
                     <li class="our-work__item card-set__item">
-                        <img src="./img/work2.jpg" alt="Адаптируем код" width="370" height="294">
+                        <picture>
+                            <source srcset="./img/work2.jpg 1x, 
+                            ./img/work2-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./img/work2.jpg" alt="Мобильные приложения" width="370" height="294">
+                        </picture>
                         <div class="thumb">
                             <p class="thumb__text">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="our-work__item card-set__item">
-                        <img src="./img/work3.jpg" alt="Применяем стили" width="370" height="294">
+                        <picture>
+                            <source srcset="./img/work3.jpg 1x, 
+                            ./img/work3-2x.jpg 2x" media="(min-width: 1200px)">
+                            <img src="./img/work3.jpg" alt="Дизайнерские решения" width="370" height="294">
+                        </picture>
                         <div class="thumb">
                             <p class="thumb__text">Дизайнерские решения</p>
                         </div>
@@ -196,7 +209,21 @@
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="list card-set">
                     <li class="command__item card-set__item">
-                        <img class="commamd__img" src="./img/team1.jpg" alt="Игорь Демьяненко" min-width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team1-mob-1x.jpg 1x, 
+                            ./img/team1-mob-2x.jpg 2x" 
+                            media="(max-width: 767px)">
+                            <source srcset="./img/team1-tablet-1x.jpg 1x, 
+                            ./img/team1-tablet-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="./img/team1-desctop-1x.jpg 1x, 
+                            ./img/team1-desctop-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+
+                            <img class="commamd__img" 
+                        src="./img/team1-mob-1x.jpg"
+                        alt="Игорь Демьяненко">
+                        </picture>
                         <div class="command__person">
                             <h3 class="command__title">Игорь Демьяненко</h3>
                             <p class="command__paragraph">Product Designer</p>
@@ -241,7 +268,21 @@
                         </div>
                     </li>
                     <li class="command__item card-set__item">
-                        <img class="commamd__img" src="./img/team2.jpg" alt="Ольга Репина" min-width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team2-mob-1x.jpg 1x, 
+                            ./img/team2-mob-2x.jpg 2x" 
+                            media="(max-width: 767px)">
+                            <source srcset="./img/team2-tablet-1x.jpg 1x, 
+                            ./img/team2-tablet-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="./img/team2-desctop-1x.jpg 1x, 
+                            ./img/team2-desctop-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+
+                            <img class="commamd__img" 
+                        src="./img/team2-mob-1x.jpg"
+                        alt="Ольга Репина">
+                        </picture>
                         <div class="command__person">
                             <h3 class="command__title">Ольга Репина</h3>
                             <p class="command__paragraph">Frontend Developer</p>
@@ -286,7 +327,21 @@
                         </div>
                     </li>
                     <li class="command__item card-set__item">
-                        <img class="commamd__img" src="./img/team3.jpg" alt="Николай Тарасов" min-width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team3-mob-1x.jpg 1x, 
+                            ./img/team3-mob-2x.jpg 2x" 
+                            media="(max-width: 767px)">
+                            <source srcset="./img/team3-tablet-1x.jpg 1x, 
+                            ./img/team3-tablet-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="./img/team3-desctop-1x.jpg 1x, 
+                            ./img/team3-desctop-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+
+                            <img class="commamd__img" 
+                        src="./img/team3-mob-1x.jpg"
+                        alt="Николай Тарасов">
+                        </picture>
                         <div class="command__person">
                             <h3 class="command__title">Николай Тарасов</h3>
                             <p class="command__paragraph">Marketing</p>
@@ -331,7 +386,21 @@
                         </div>
                     </li>
                     <li class="command__item card-set__item">
-                        <img class="commamd__img" src="./img/team4.jpg" alt="Михаил Ермаков" min-width="450" height="460">
+                        <picture>
+                            <source srcset="./img/team4-mob-1x.jpg 1x, 
+                            ./img/team4-mob-2x.jpg 2x" 
+                            media="(max-width: 767px)">
+                            <source srcset="./img/team4-tablet-1x.jpg 1x, 
+                            ./img/team4-tablet-2x.jpg 2x" 
+                            media="(min-width: 768px)">
+                            <source srcset="./img/team4-desctop-1x.jpg 1x, 
+                            ./img/team4-desctop-2x.jpg 2x" 
+                            media="(min-width: 1200px)">
+
+                            <img class="commamd__img" 
+                        src="./img/team4-mob-1x.jpg"
+                        alt="Михаил Ермаков">
+                        </picture>
                         <div class="command__person">
                             <h3 class="command__title">Михаил Ермаков</h3>
                             <p class="command__paragraph">UI Designer</p>
@@ -439,6 +508,7 @@
 
 <footer class="footer">
     <div class="container footer__container">
+        <div class="footer__wrapper">
         <div class="footer__cont-item">
             <a class="logo link" href="./index.html">Web<span class="logo--white">Studio</span></a>
             <address class="address">
@@ -499,6 +569,7 @@
                 </li>
             </ul>
 
+        </div>
         </div>
 
         <div class="footer__cont-item">
@@ -573,8 +644,8 @@
                     <label for="policy" class="privat__policy">
                     <input type="checkbox" name="policy" class="policy" id="policy" >
                     <span class="check-box"></span>
-                   <div>
-                     Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy__link" target="_blank" rel="noreferrer noopener">  Условия договора</a>
+                <div>
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy__link" target="_blank" rel="noreferrer noopener">  Условия договора</a>
                     </div>
                 </label>
 

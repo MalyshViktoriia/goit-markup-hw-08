@@ -14,15 +14,10 @@
   padding-bottom: 30px;
   background-color: var(--background-color);
   @media screen and (max-width: 767px) {
-    min-width: 450px;
+    min-width: 320px;
   }
-
-  // margin-bottom: 30px;
 }
 
-// .command--last-person {
-//   margin-bottom: 0;
-// }
 .command {
   background-color: var(--buttons-bgc);
   @media screen and (max-width: 767px) {

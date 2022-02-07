@@ -757,7 +757,7 @@ img {
 
 .mobile-menu__container {
   padding: 50px 40px;
-  width: 480px;
+  min-width: 320px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1042,7 +1042,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .hero {
-    min-width: 480px;
+    min-width: 320px;
   }
 }
 
@@ -1168,7 +1168,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .command__person {
-    min-width: 450px;
+    min-width: 320px;
   }
 }
 

@@ -927,12 +927,6 @@ img {
   margin-right: 50px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  contacts-list--tablet {
-    margin-right: 0px;
-  }
-}
-
 .contacts__list {
   display: flex;
   margin-left: auto;
@@ -992,10 +986,16 @@ img {
   margin-bottom: 10px;
 }
 
-@media screen and (min-width: 678px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .site-nav--tablet {
     display: unset;
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-list__item.contacts-list--tablet {
+    margin-right: 0;
   }
 }
 
@@ -1251,6 +1251,15 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__wrapper {
     display: flex;
@@ -1262,13 +1271,14 @@ img {
 @media screen and (min-width: 768px) {
   .footer__container {
     display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: flex;
-    align-items: baseline;
+    flex-direction: unset;
   }
 }
 
@@ -1297,7 +1307,7 @@ img {
   margin-bottom: 9px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .adress__item {
     display: flex;
     justify-content: center;
@@ -1310,22 +1320,21 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer__cont-item {
-    margin-right: 70px;
-  }
-}
-
-.footer__cont-item:last-child {
-  margin-left: auto;
-}
-
 @media screen and (max-width: 1199px) {
   .footer__cont-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__cont-item {
+    margin-left: auto;
+  }
+  .footer__cont-item:not(:last-child) {
+    margin-right: 70px;
   }
 }
 
@@ -1355,7 +1364,7 @@ img {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__button-wrapper {
     display: flex;
     justify-content: center;
@@ -1386,7 +1395,7 @@ img {
   padding: 15px 0px 15px 0px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer__input {
     margin-bottom: 20px;
   }
@@ -1425,6 +1434,12 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__button:nth-child(1) {
+    margin-bottom: 15px;
   }
 }
 

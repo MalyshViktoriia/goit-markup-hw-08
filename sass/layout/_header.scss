@@ -55,12 +55,6 @@
   }
 }
 
-contacts-list--tablet {
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 0px;
-  }
-}
-
 .contacts__list {
   display: flex;
   margin-left: auto;
@@ -115,8 +109,13 @@ contacts-list--tablet {
   &:not(:last-child) {
     margin-bottom: 10px;
     }
-  @media screen and (min-width:678px) and (max-width: 1199px) {
+  @media screen and (min-width:768px) and (max-width: 1199px) {
     display: unset;
     padding: 0;  
   }
+}
+.contacts-list__item.contacts-list--tablet {
+  @media screen and (min-width:768px) and (max-width: 1199px) {
+  margin-right: 0;
+}
 }

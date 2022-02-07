@@ -84,6 +84,7 @@
 }
 .mobile-menu__socials {
   display: flex;
+  position: relative;
 }
 .mobile-menu__social-name {
   font-weight: 500;
@@ -91,17 +92,16 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  &::after {
-    content: '';
-    height: 22px;
-    border: 0.5px solid rgba(33, 33, 33, 0.2);
-    position: absolute;
-    margin-left: 10px;
-  }
+  
 }
 
+
+
 .mobile-menu__social-link:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+ 
 }
 .mobile-menu__current {
   color: var(--accent-color);

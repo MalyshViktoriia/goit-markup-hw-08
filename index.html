@@ -58,7 +58,6 @@
         <!-- MOBILE-MENU -->
 <div class="mobile-menu is-hidden" data-menu >
     <div class="mobile-menu__container">
-        <div class="mobile-menu__top">
             <button type="button" class="mobile-menu__mobile-close-button" data-menu-close>
                 <svg width="40" height="40" class="menu__close-button">
                     <use href="img/icons.svg#close-black"></use>
@@ -70,9 +69,8 @@
                 <li class="mobile-menu__nav-link"><a href="./portfolio.html" class="link">Портфолио</a></li>
                 <li class="mobile-menu__nav-link"><a href="" class="link">Контакты</a></li>
             </ul>
-            </div>
             <div class="mobile-menu-bottom">
-            <ul class="list">
+            <ul class="list mobile-menu__contacts">
                     <li class="mobile-menu__contact-tel">
                     <a class="link" href="tel:+380961111111">
                     +38 096 111 11 11</a>
@@ -84,20 +82,19 @@
                 
                 </li>
             </ul>
-      
-       
+
             <ul class="mobile-menu__socials list">
                 <li class="mobile-menu__social-link">
-                    <p class="mobile-menu__social-name">Instagram</p>
+                    <a href="" class="mobile-menu__social-name link">Instagram</a>
                 </li>
                 <li class="mobile-menu__social-link">
-                    <p class="mobile-menu__social-name">Twitter</p>
+                    <a href="" class="mobile-menu__social-name link">Twitter</a>
                 </li>
                 <li class="mobile-menu__social-link">
-                    <p class="mobile-menu__social-name">Facebook</p>
+                    <a href="" class="mobile-menu__social-name link">Facebook</a>
                 </li>
                 <li class="mobile-menu__social-link">
-                    <p class="mobile-menu__social-name">LinkedIn</p>
+                    <a href="" class="mobile-menu__social-name link">LinkedIn</a>
                 </li>
             </ul>
         </div>
@@ -171,8 +168,12 @@
                     <picture>
                         <source srcset="./img/work1.jpg 1x, 
                         ./img/work1-2x.jpg 2x" 
-                        media="(min-width: 1200px)">
-                        <img src="./img/work1.jpg" alt="Десктопные приложения" width="370" height="294">
+                        media="(min-width: 1200px)" type="image/jpeg">
+
+                        <source srcset="./img/work1.webp 1x, 
+                        ./img/work1-2x.webp 2x" 
+                        media="(min-width: 1200px)" type="image/webp">
+                        <img src="./img/work1.jpg" alt="Десктопные приложения" width="370" height="294" loading="lazy">
                     </picture>
                             <div class="thumb">
                                 <p class="thumb__text">Десктопные приложения</p>
@@ -182,8 +183,11 @@
                     <li class="our-work__item card-set__item">
                         <picture>
                             <source srcset="./img/work2.jpg 1x, 
-                            ./img/work2-2x.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./img/work2.jpg" alt="Мобильные приложения" width="370" height="294">
+                            ./img/work2-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/work2.webp 1x, 
+                            ./img/work2-2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <img src="./img/work2.jpg" alt="Мобильные приложения" width="370" height="294" loading="lazy">
                         </picture>
                         <div class="thumb">
                             <p class="thumb__text">Мобильные приложения</p>
@@ -192,8 +196,11 @@
                     <li class="our-work__item card-set__item">
                         <picture>
                             <source srcset="./img/work3.jpg 1x, 
-                            ./img/work3-2x.jpg 2x" media="(min-width: 1200px)">
-                            <img src="./img/work3.jpg" alt="Дизайнерские решения" width="370" height="294">
+                            ./img/work3-2x.jpg 2x" media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/work3.webp 1x, 
+                            ./img/work3-2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                            <img src="./img/work3.jpg" alt="Дизайнерские решения" width="370" height="294" loading="lazy">
                         </picture>
                         <div class="thumb">
                             <p class="thumb__text">Дизайнерские решения</p>
@@ -213,17 +220,27 @@
                         <picture>
                             <source srcset="./img/team1-mob-1x.jpg 1x, 
                             ./img/team1-mob-2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(max-width: 767px)" type="image/jpeg">
                             <source srcset="./img/team1-tablet-1x.jpg 1x, 
                             ./img/team1-tablet-2x.jpg 2x" 
-                            media="(min-width: 768px)">
+                            media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="./img/team1-desctop-1x.jpg 1x, 
                             ./img/team1-desctop-2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/team1-mob-1x.webp 1x, 
+                            ./img/team1-mob-2x.webp 2x" 
+                            media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./img/team1-tablet-1x.webp 1x, 
+                            ./img/team1-tablet-2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/team1-desctop-1x.webp 1x, 
+                            ./img/team1-desctop-2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
 
                             <img class="commamd__img" 
                         src="./img/team1-mob-1x.jpg"
-                        alt="Игорь Демьяненко">
+                        alt="Игорь Демьяненко" width="450" height="460" loading="lazy">
                         </picture>
                         <div class="command__person">
                             <h3 class="command__title">Игорь Демьяненко</h3>
@@ -272,17 +289,27 @@
                         <picture>
                             <source srcset="./img/team2-mob-1x.jpg 1x, 
                             ./img/team2-mob-2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(max-width: 767px)" type="image/jpeg">
                             <source srcset="./img/team2-tablet-1x.jpg 1x, 
                             ./img/team2-tablet-2x.jpg 2x" 
-                            media="(min-width: 768px)">
+                            media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="./img/team2-desctop-1x.jpg 1x, 
                             ./img/team2-desctop-2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/team2-mob-1x.webp 1x, 
+                            ./img/team2-mob-2x.webp 2x" 
+                            media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./img/team2-tablet-1x.webp 1x, 
+                            ./img/team2-tablet-2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/team2-desctop-1x.webp 1x, 
+                            ./img/team2-desctop-2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
 
                             <img class="commamd__img" 
                         src="./img/team2-mob-1x.jpg"
-                        alt="Ольга Репина">
+                        alt="Ольга Репина" width="450" height="460" loading="lazy">
                         </picture>
                         <div class="command__person">
                             <h3 class="command__title">Ольга Репина</h3>
@@ -331,17 +358,27 @@
                         <picture>
                             <source srcset="./img/team3-mob-1x.jpg 1x, 
                             ./img/team3-mob-2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(max-width: 767px)" type="image/jpeg">
                             <source srcset="./img/team3-tablet-1x.jpg 1x, 
                             ./img/team3-tablet-2x.jpg 2x" 
-                            media="(min-width: 768px)">
+                            media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="./img/team3-desctop-1x.jpg 1x, 
                             ./img/team3-desctop-2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/team3-mob-1x.webp 1x, 
+                            ./img/team3-mob-2x.webp 2x" 
+                            media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./img/team3-tablet-1x.webp 1x, 
+                            ./img/team3-tablet-2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/team3-desctop-1x.webp 1x, 
+                            ./img/team3-desctop-2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
 
                             <img class="commamd__img" 
                         src="./img/team3-mob-1x.jpg"
-                        alt="Николай Тарасов">
+                        alt="Николай Тарасов" width="450" height="460" loading="lazy">
                         </picture>
                         <div class="command__person">
                             <h3 class="command__title">Николай Тарасов</h3>
@@ -390,17 +427,27 @@
                         <picture>
                             <source srcset="./img/team4-mob-1x.jpg 1x, 
                             ./img/team4-mob-2x.jpg 2x" 
-                            media="(max-width: 767px)">
+                            media="(max-width: 767px)" type="image/jpeg">
                             <source srcset="./img/team4-tablet-1x.jpg 1x, 
                             ./img/team4-tablet-2x.jpg 2x" 
-                            media="(min-width: 768px)">
+                            media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="./img/team4-desctop-1x.jpg 1x, 
                             ./img/team4-desctop-2x.jpg 2x" 
-                            media="(min-width: 1200px)">
+                            media="(min-width: 1200px)" type="image/jpeg">
+
+                            <source srcset="./img/team4-mob-1x.webp 1x, 
+                            ./img/team4-mob-2x.webp 2x" 
+                            media="(max-width: 767px)" type="image/webp">
+                            <source srcset="./img/team4-tablet-1x.webp 1x, 
+                            ./img/team4-tablet-2x.webp 2x" 
+                            media="(min-width: 768px)" type="image/webp">
+                            <source srcset="./img/team4-desctop-1x.webp 1x, 
+                            ./img/team4-desctop-2x.webp 2x" 
+                            media="(min-width: 1200px)" type="image/webp">
 
                             <img class="commamd__img" 
-                        src="./img/team4-mob-1x.jpg"
-                        alt="Михаил Ермаков">
+                        src="./img/team4-mob-1x.jpg" 
+                        alt="Михаил Ермаков" width="450" height="460" loading="lazy">
                         </picture>
                         <div class="command__person">
                             <h3 class="command__title">Михаил Ермаков</h3>
@@ -645,7 +692,9 @@
                     <label for="policy" class="privat__policy">
                     <input type="checkbox" name="policy" class="policy" id="policy" >
                     <span class="check-box"></span>
-                    Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy__link" target="_blank" rel="noreferrer noopener">  Условия договора</a>
+                    <span> 
+                        Соглашаюсь с рассылкой и принимаю <a href="" class="privat-policy__link" target="_blank" rel="noreferrer noopener">  Условия договора</a>
+                    </span>
                 </label>
 
                 <div class="modal__send-button">

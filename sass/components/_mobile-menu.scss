@@ -1,6 +1,5 @@
 .mobile-menu__container {
   padding: 50px 40px;
-  min-width: 320px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -15,7 +14,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   transition: transform var(--animation-time) var(--timing-function),
     opacity var(--animation-time) var(--timing-function);
 
@@ -35,6 +34,11 @@
   cursor: pointer;
   border: none;
   outline: none;
+  transition: color var(--animation-time) var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -48,6 +52,7 @@
   cursor: pointer;
   border: none;
   outline: none;
+  transition: color var(--animation-time) var(--timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -60,10 +65,20 @@
   line-height: calc(47 / 40);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  transition: color var(--animation-time) var(--timing-function);
 
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.mobile-menu__contacts {
+  margin-bottom: 66px;
 }
 
 .mobile-menu__contact-tel {
@@ -72,7 +87,11 @@
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
   color: var(--accent-color);
-  margin-bottom: 33px;
+  margin-bottom: 31px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 26px;
+  }
 }
 .mobile-menu__contact-email {
   font-weight: 500;
@@ -80,12 +99,13 @@
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--optional-text-color);
-  margin-bottom: 66px;
 }
 .mobile-menu__socials {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  margin-top: -10px;
+  margin-left: -10px;
 }
 .mobile-menu__social-name {
   font-weight: 500;
@@ -95,10 +115,14 @@
   color: var(--accent-color);
 }
 
-.mobile-menu__social-link:not(:last-child) {
-  margin-right: 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
+.mobile-menu__social-link {
+  margin-left: 10px;
+  margin-top: 10px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
 }
 .mobile-menu__current {
   color: var(--accent-color);

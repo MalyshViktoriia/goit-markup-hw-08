@@ -26,6 +26,7 @@
   &:focus .portfolio-overlay {
     box-shadow: var(--portfolio-shadow);
     transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -63,9 +64,9 @@
   height: 100%;
   top: 0;
   left: 0;
-
+  opacity: 0;
   transition: transform var(--animation-time) var(--timing-function);
-
+  overflow: auto;
   transform: translateY(100%);
 
   &:hover,
